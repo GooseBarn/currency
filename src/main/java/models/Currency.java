@@ -1,4 +1,4 @@
-package testPackage;
+package models;
 
 import javafx.util.Pair;
 
@@ -11,7 +11,7 @@ public class Currency {
     private String name; // в валюту
     private List<Pair<String, Double>> value; // пара значений. Дата и стоимость
 
-    Currency(long id, String name) {
+    public Currency(long id, String name) {
         this.id = id;
         this.name = name;
         value = new ArrayList<Pair<String, Double>> ();

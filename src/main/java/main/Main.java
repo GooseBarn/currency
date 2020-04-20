@@ -1,11 +1,11 @@
-package testPackage;
+package main;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SpringMainClass {
+public class Main {
     public static void main(String[] args){
-        SpringApplication.run(SpringMainClass.class);
+        SpringApplication.run(Main.class);
     }
 }
