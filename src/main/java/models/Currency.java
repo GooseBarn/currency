@@ -11,13 +11,10 @@ public class Currency {
     private String name; // в валюту
     private List<Pair<String, Double>> value; // пара значений. Дата и стоимость
 
-    public Currency(long id, String name) {
+    public Currency(long id, String name,List<Pair<String, Double>> value) {
         this.id = id;
         this.name = name;
-        value = new ArrayList<Pair<String, Double>> ();
-        for (int i=0; i<10; i++){
-            value.add( new Pair<String, Double>("testDte", Math.random()*30));
-        }
+        this.value = value;
     }
 
     public long getId() {
@@ -39,7 +36,5 @@ public class Currency {
     public void setName(String name) {
         this.name = name;
     }
-
-
 
 }
